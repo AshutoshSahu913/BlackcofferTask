@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/exploreFragment">
+
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.example.blackcoffertask.Fragments.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" >
+        <action
+            android:id="@+id/action_exploreFragment_to_connetionsFragment"
+            app:destination="@id/connetionsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connetionsFragment"
+        android:name="com.example.blackcoffertask.Fragments.ConnetionsFragment"
+        android:label="fragment_connetions"
+        tools:layout="@layout/fragment_connetions" >
+        <action
+            android:id="@+id/action_connetionsFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.blackcoffertask.Fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chatFragment_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.blackcoffertask.Fragments.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" >
+        <action
+            android:id="@+id/action_contactsFragment_to_groupsFragment"
+            app:destination="@id/groupsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupsFragment"
+        android:name="com.example.blackcoffertask.Fragments.GroupsFragment"
+        android:label="fragment_groups"
+        tools:layout="@layout/fragment_groups" />
+</navigation>

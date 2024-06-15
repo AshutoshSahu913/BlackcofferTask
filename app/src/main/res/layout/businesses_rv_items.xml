@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:elevation="5dp"
+
+            app:cardCornerRadius="20dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Michael Murphy"
+                            android:textColor="@color/appColor"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+
+                            android:text="san Francisco, within 1 Km"
+                            android:textColor="#680A2E42"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ProgressBar
+                                android:id="@+id/progressBar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:indeterminate="false"
+                                android:minHeight="20dp"
+                                android:padding="4dp"
+                                android:layout_weight="1"
+                                android:progress="75"
+                                android:progressTint="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:maxLines="2"
+                                android:padding="2dp"
+                                android:text="Profile Score - "
+                                android:textColor="#9C0A2E42"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/profileScore"
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:maxLines="2"
+                                android:padding="2dp"
+                                android:text="75%"
+                                android:textColor="#9C0A2E42"
+                                android:textSize="15sp"
+                                android:textStyle="normal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/baseline_call_24"
+                                app:tint="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/baseline_person_add_alt_1_24"
+                                app:tint="@color/white" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:background="@drawable/circle"
+                                android:padding="10dp"
+                                android:src="@drawable/baseline_location_pin_24"
+                                app:tint="@color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                    <TextView
+                        android:id="@+id/showMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:text="Hi community! I am open to new connections"
+                        android:textColor="#9C0A2E42"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/profession"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="2"
+                        android:padding="2dp"
+                        android:text="Wedding planner"
+                        android:textColor="#9C0A2E42"
+                        android:textSize="15sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:padding="5dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

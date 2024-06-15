@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:checkable="true"
+        android:icon="@drawable/eye_svgrepo_com__1_"
+        android:title="Explore"
+        android:iconTint="@color/icon_color"
+        android:id="@+id/exploreFragment"
+        />
+    <item
+        android:id="@+id/connetionsFragment"
+        android:icon="@drawable/share_circle_svgrepo_com"
+        android:iconTint="@color/icon_color"
+        android:title="Connections" />
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/chat_1_svgrepo_com"
+        android:iconTint="@color/icon_color"
+        android:title="Chat" />
+    <item
+        android:id="@+id/contactsFragment"
+        android:icon="@drawable/contact_book_2_svgrepo_com"
+        android:iconTint="@color/icon_color"
+        android:title="Contacts" />
+    <item
+        android:id="@+id/groupsFragment"
+        android:iconTint="@color/icon_color"
+        android:icon="@drawable/hashtag_svgrepo_com"
+        android:title="Groups" />
+
+</menu>
